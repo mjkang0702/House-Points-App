@@ -1,0 +1,48 @@
+#CODE
+<FormBox onSubmit={() => {}}>
+    <InputField
+        label="Email"
+        placeholder="Enter email"
+    />
+    <InputField
+        label="Password"
+        placeholder="Enter password"
+    />
+    <ButtonGroup align="justify">
+        <Button
+            onPress={() => {}}
+            variant="primary"
+        >
+            Sign In
+        </Button>
+    </ButtonGroup>
+    <TextLink href="#">
+        Forgot password?
+    </TextLink>
+</FormBox>
+##############################################################################
+
+
+#VSTACK
+VStack(alignment: .leading, spacing: Constants.Space600) { ... }
+.padding(Constants.Space600)
+.background(Constants.BackgroundDefaultDefault)
+.cornerRadius(Constants.Radius200)
+.overlay(
+  RoundedRectangle(cornerRadius: Constants.Radius200)
+    .inset(by: 0.5)
+    .stroke(Constants.BorderDefaultDefault, lineWidth: Constants.StrokeBorder)
+)
+
+##############################################################################
+
+#VARIABLES
+struct Constants {
+  static let Space600: CGFloat = 24
+  static let BackgroundDefaultDefault: Color = .white
+  static let Radius200: CGFloat = 8
+  static let StrokeBorder: CGFloat = 1
+  static let BorderDefaultDefault: Color = Color(red: 0.85, green: 0.85, blue: 0.85)
+}
+
+##############################################################################
