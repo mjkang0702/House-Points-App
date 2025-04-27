@@ -1,4 +1,4 @@
 # House-Points-App
-CCAA House Points App Development
+CCAA House Points App Development 2025
 
-As of now, this project is to be created in SwiftUI code, designed for ios products.
+This project is written in "SwiftUI", which is a program for IOS products.
