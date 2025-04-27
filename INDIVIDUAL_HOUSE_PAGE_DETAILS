@@ -1,0 +1,71 @@
+#IMAGE
+Rectangle()
+  .foregroundColor(.clear)
+  .frame(width: 109, height: 123)
+  .background(
+    Image("PATH_TO_IMAGE")
+      .resizable()
+      .aspectRatio(contentMode: .fill)
+      .frame(width: 109, height: 123)
+      .clipped()
+  )
+
+#DROP_DOWN_MENU--React
+<Accordion>
+    <AccordionItem
+        title="Winning a challenge"
+        children="Student: Bob Lee Granted by: Mr. Deej\nNotes: Won a class challenge."
+    />
+    <AccordionItem
+        title="Donations"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Winning a challenge"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Student Recognition"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Basketball game"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Lenten Collection"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+</Accordion>
+
+
+#TOP_GRADIENT
+Rectangle()
+  .foregroundColor(.clear)
+  .frame(width: 393, height: 177)
+  .background(
+    LinearGradient(
+      stops: [
+        Gradient.Stop(color: Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0), location: 0.49),
+        Gradient.Stop(color: .white, location: 1.00),
+      ],
+      startPoint: UnitPoint(x: 0.5, y: 0),
+      endPoint: UnitPoint(x: 0.5, y: 1)
+    )
+  )
+
+
+#BOTTOM GRADIENT
+Rectangle()
+  .foregroundColor(.clear)
+  .frame(width: 393, height: 491)
+  .background(
+    LinearGradient(
+      stops: [
+        Gradient.Stop(color: Color(red: 0.85, green: 0.85, blue: 0.85).opacity(0), location: 0.49),
+        Gradient.Stop(color: Color(red: 1, green: 0.92, blue: 0.18), location: 1.00),
+      ],
+      startPoint: UnitPoint(x: 0.5, y: 0),
+      endPoint: UnitPoint(x: 0.5, y: 1)
+    )
+  )
