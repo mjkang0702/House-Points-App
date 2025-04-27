@@ -1,0 +1,35 @@
+#Code--React
+<MenuItem>
+    <IconPlusCircle size="20" />
+    <MenuLabel>Add Points</MenuLabel>
+
+    <MenuDescription>
+        {figma.string("Description")}
+    </MenuDescription>
+</MenuItem>
+
+
+
+
+
+#HStack
+HStack(alignment: .top, spacing: Constants.Space300) { ... }
+.padding(.horizontal, Constants.Space400)
+.padding(.vertical, Constants.Space300)
+.frame(width: 320, alignment: .topLeading)
+.cornerRadius(Constants.radiusMd)
+.overlay(
+  RoundedRectangle(cornerRadius: Constants.radiusMd)
+    .inset(by: 0.5)
+    .stroke(Color(red: 0.82, green: 0.82, blue: 0.82), lineWidth: 1)
+)
+
+
+
+
+#Variables
+struct Constants {
+  static let Space300: CGFloat = 12
+  static let radiusMd: CGFloat = 8
+  static let Space400: CGFloat = 16
+}
