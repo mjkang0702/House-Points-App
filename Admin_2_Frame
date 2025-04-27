@@ -1,0 +1,4 @@
+ZStack { ... }
+.frame(width: 393, height: 852)
+.background(.white)
+.cornerRadius(55)
