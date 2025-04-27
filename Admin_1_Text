@@ -1,0 +1,8 @@
+Text("Administrator")
+  .font(
+    Font.custom("Poppins", size: 36)
+      .weight(.semibold)
+  )
+  .multilineTextAlignment(.center)
+  .foregroundColor(.black)
+  .frame(width: 280, height: 81, alignment: .top)
