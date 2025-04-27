@@ -1,0 +1,52 @@
+#CODE--REACT
+import {
+Notification,
+Text,
+TextStrong,
+} from "primitives"
+import { Button } from "primitives"
+import { IconInbox } from "icons"
+<Notification
+icon={<IconInbox size="20" />}
+isDismissible
+variant="message"
+>
+<TextStrong>
+Musical Chairs
+</TextStrong>
+<Text>
+Student name: Bob Lee Grade: 11
+House: Canonicus Points: 100 Granted
+by: Mr. Deej
+</Text>
+<Button
+onPress={() => {}}
+variant="primary"
+size="small"
+>
+Accept
+</Button>
+</Notification>
+
+
+#HSTACK
+HStack(alignment: .center, spacing: Constants.Space300) { ... }
+.padding(Constants.Space400)
+.frame(width: 331, alignment: .leading)
+.background(Constants.BackgroundDefaultDefault)
+.cornerRadius(Constants.Radius200)
+.overlay(
+  RoundedRectangle(cornerRadius: Constants.Radius200)
+    .inset(by: 0.5)
+    .stroke(Constants.BorderDefaultSecondary, lineWidth: Constants.StrokeBorder)
+)
+
+#VARIABLES
+struct Constants {
+  static let Space300: CGFloat = 12
+  static let BackgroundDefaultDefault: Color = .white
+  static let Radius200: CGFloat = 8
+  static let StrokeBorder: CGFloat = 1
+  static let BorderDefaultSecondary: Color = Color(red: 0.46, green: 0.46, blue: 0.46)
+  static let Space400: CGFloat = 16
+}
