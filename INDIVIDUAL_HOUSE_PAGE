@@ -1,0 +1,13 @@
+ZStack { ... }
+.frame(width: 393, height: 1353)
+.background(
+  LinearGradient(
+    stops: [
+      Gradient.Stop(color: .white, location: 0.22),
+      Gradient.Stop(color: Color(red: 1, green: 0.92, blue: 0.18), location: 1.00),
+    ],
+    startPoint: UnitPoint(x: 0.5, y: 0),
+    endPoint: UnitPoint(x: 0.5, y: 1)
+  )
+)
+.cornerRadius(55)
