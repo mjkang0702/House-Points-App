@@ -38,6 +38,15 @@ Rectangle()
     />
 </Accordion>
 
+#DROP_DOWN_MENU_VSTACK
+VStack(alignment: .leading, spacing: Constants.Space400) { ... }
+.padding(0)
+.frame(width: 345, alignment: .topLeading)
+
+#DROP_DOWN_MENU_VARIABLES
+struct Constants {
+  static let Space400: CGFloat = 16
+}
 
 #TOP_GRADIENT
 Rectangle()
