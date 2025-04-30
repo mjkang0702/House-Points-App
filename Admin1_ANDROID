@@ -1,0 +1,79 @@
+#FRAME
+Modifier
+  .width(393.dp)
+  .height(852.dp)
+  .background(color = Color(0xFFFFFFFF), shape = RoundedCornerShape(size = 55.dp))
+
+#TEXT
+Modifier
+  .width(280.dp)
+  .height(81.dp)
+Text(
+  text = "Administrator",
+  style = TextStyle(
+    fontSize = 36.sp,
+    fontFamily = FontFamily(Font(R.font.poppins)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Center,
+  )
+)
+
+#FORM
+<FormBox onSubmit={() => {}}>
+    <InputField
+        label="Email"
+        placeholder="Enter email"
+    />
+    <InputField
+        label="Password"
+        placeholder="Enter password"
+    />
+    <ButtonGroup align="justify">
+        <Button
+            onPress={() => {}}
+            variant="primary"
+        >
+            Sign In
+        </Button>
+    </ButtonGroup>
+    <TextLink href="#">
+        Forgot password?
+    </TextLink>
+</FormBox>
+
+Modifier
+  .border(width = Variables.StrokeBorder, color = Variables.BorderDefaultDefault, shape = RoundedCornerShape(size = Variables.Radius200)))
+  .width(320.dp)
+  .height(322.dp)
+  .background(color = Variables.BackgroundDefaultDefault, shape = RoundedCornerShape(size = Variables.Radius200))
+  .padding(start = Variables.Space600, top = Variables.Space600, end = Variables.Space600, bottom = Variables.Space600)
+
+object Variables {
+  val BackgroundDefaultDefault: Color = Color(0xFFFFFFFF)
+  val Radius200: Dp = 8.dp
+  val BorderDefaultDefault: Color = Color(0xFFD9D9D9)
+  val StrokeBorder: Dp = 1.dp
+  val Space600: Dp = 24.dp.dp
+  val Space600: Dp = 24.dp
+}
+
+Column(
+  verticalArrangement = Arrangement.spacedBy(Variables.Space600, Alignment.Top),
+  horizontalAlignment = Alignment.Start,
+) {
+  // Child views.
+}
+
+
+#RETURN BUTTON
+Modifier
+  .padding(1.dp)
+  .width(31.dp)
+  .height(31.dp)
+
+Image(
+  painter = painterResource(id = R.drawable.ChevronLeft),
+  contentDescription = "image description",
+  contentScale = ContentScale.None
+)
