@@ -1,0 +1,107 @@
+#FRAME
+Modifier
+  .width(393.dp)
+  .height(1353.dp)
+
+#TEXT
+Modifier
+  .width(280.dp)
+  .height(81.dp)
+
+Text(
+  text = "Amicus",
+  style = TextStyle(
+    fontSize = 36.sp,
+    fontFamily = FontFamily(Font(R.font.poppins)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Center,
+  )
+)
+
+#LIST
+<Accordion>
+    <AccordionItem
+        title="Winning a challenge"
+        children="Student: Bob Lee Granted by: Mr. Deej\nNotes: Won a class challenge."
+    />
+    <AccordionItem
+        title="Donations"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Winning a challenge"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Student Recognition"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Basketball game"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+    <AccordionItem
+        title="Lenten Collection"
+        children="Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list."
+    />
+</Accordion>
+
+Modifier
+  .width(345.dp)
+  .height(472.dp)
+
+object Variables {
+  val Space400: Dp = 16.dp
+}
+
+Column(
+  verticalArrangement = Arrangement.spacedBy(Variables.Space400, Alignment.Top),
+  horizontalAlignment = Alignment.Start,
+) {
+  // Child views.
+}
+
+#UPPER_GRADIENT
+Modifier
+  .width(393.dp)
+  .height(177.dp)
+
+Linear Gradient
+UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 0)
+UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+
+#BOTTOM_GRADIENT
+Modifier
+  .width(393.dp)
+  .height(491.dp)
+
+Linear Gradient
+UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 0)
+UIColor(red: 1, green: 0.92, blue: 0.18, alpha: 1)
+
+#IMAGE
+Modifier
+  .width(109.dp)
+  .height(123.dp)
+
+Image(
+  painter = painterResource(id = R.drawable.image2),
+  contentDescription = "image description",
+  contentScale = ContentScale.FillBounds
+)
+
+#RETURN_BUTTON
+<IconChevronLeft size="48" />
+
+Modifier
+  .padding(1.dp)
+  .width(31.dp)
+  .height(31.dp)
+
+Image(
+  painter = painterResource(id = R.drawable.ChevronLeft),
+  contentDescription = "image description",
+  contentScale = ContentScale.None
+)
+
