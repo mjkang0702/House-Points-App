@@ -1,0 +1,85 @@
+#FRAME
+Modifier
+  .width(393.dp)
+  .height(852.dp)
+  .background(color = Color(0xFFFFFFFF), shape = RoundedCornerShape(size = 55.dp))
+
+#TEXT
+Modifier
+  .width(280.dp)
+  .height(81.dp)
+
+Text(
+  text = "Administrator",
+  style = TextStyle(
+    fontSize = 36.sp,
+    fontFamily = FontFamily(Font(R.font.poppins)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Center,
+  )
+)
+
+#ADD_POINTS
+import {
+MenuItem,
+MenuLabel,
+} from "primitives"
+import { IconPlusCircle } from "icons"
+<MenuItem>
+<IconPlusCircle size="20" />
+<MenuLabel>Add Points</MenuLabel>
+<MenuDescription>
+{figma.string("Description")}
+</MenuDescription>
+</MenuItem>
+
+Modifier
+  .border(width = 1.dp, color = Color(0xFFD2D2D2), shape = RoundedCornerShape(size = Variables.radiusMd)))
+  .width(320.dp)
+  .height(70.dp)
+  .padding(start = Variables.Space400, top = Variables.Space300, end = Variables.Space400, bottom = Variables.Space300)
+
+object Variables {
+  val radiusMd: Dp = 8.dp
+  val Space400: Dp = 16.dp.dp
+  val Space300: Dp = 12.dp.dp
+  val Space300: Dp = 12.dp
+}
+
+Row(
+  horizontalArrangement = Arrangement.spacedBy(Variables.Space300, Alignment.Start),
+  verticalAlignment = Alignment.Top,
+) {
+  // Child views.
+}
+
+#REQUESTS
+<MenuItem>
+    <IconSettings size="20" />
+    <MenuLabel>Requests</MenuLabel>
+
+    <MenuDescription>
+        {figma.string("Description")}
+    </MenuDescription>
+</MenuItem>
+
+Modifier
+  .border(width = 1.dp, color = Color(0xFFD2D2D2), shape = RoundedCornerShape(size = Variables.radiusMd)))
+  .width(320.dp)
+  .height(70.dp)
+  .padding(start = Variables.Space400, top = Variables.Space300, end = Variables.Space400, bottom = Variables.Space300)
+
+object Variables {
+  val radiusMd: Dp = 8.dp
+  val Space400: Dp = 16.dp.dp
+  val Space300: Dp = 12.dp.dp
+  val Space300: Dp = 12.dp
+}
+
+Row(
+  horizontalArrangement = Arrangement.spacedBy(Variables.Space300, Alignment.Start),
+  verticalAlignment = Alignment.Top,
+) {
+  // Child views.
+}
