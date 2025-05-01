@@ -1,0 +1,89 @@
+#FRAME
+Modifier
+  .width(393.dp)
+  .height(1070.dp)
+  .background(color = Color(0xFFFFFFFF), shape = RoundedCornerShape(size = 55.dp))
+
+#TEXT
+Modifier
+  .width(280.dp)
+  .height(81.dp)
+
+Text(
+  text = "Add points",
+  style = TextStyle(
+    fontSize = 36.sp,
+    fontFamily = FontFamily(Font(R.font.poppins)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Center,
+  )
+)
+
+#FORM
+import { FormBox } from "compositions"
+import { InputField } from "primitives"
+<FormBox onSubmit={() => {}}>
+<InputField
+label="Student Name"
+placeholder="Enter name"
+/>
+<InputField
+label="Grade"
+placeholder="Enter grade"
+/>
+</FormBox>
+
+Modifier
+  .border(width = Variables.StrokeBorder, color = Variables.BorderDefaultDefault, shape = RoundedCornerShape(size = Variables.Radius200)))
+  .width(320.dp)
+  .height(695.dp)
+  .background(color = Variables.BackgroundDefaultDefault, shape = RoundedCornerShape(size = Variables.Radius200))
+  .padding(start = Variables.Space600, top = Variables.Space600, end = Variables.Space600, bottom = Variables.Space600)
+
+object Variables {
+  val BackgroundDefaultDefault: Color = Color(0xFFFFFFFF)
+  val Radius200: Dp = 8.dp
+  val BorderDefaultDefault: Color = Color(0xFFD9D9D9)
+  val StrokeBorder: Dp = 1.dp
+  val Space600: Dp = 24.dp.dp
+  val Space600: Dp = 24.dp
+}
+
+Column(
+  verticalArrangement = Arrangement.spacedBy(Variables.Space600, Alignment.Top),
+  horizontalAlignment = Alignment.Start,
+) {
+  // Child views.
+}
+
+#SUBMIT
+<Button
+    onPress={() => {}}
+    variant="primary"
+>
+    Submit
+</Button>
+
+Modifier
+  .border(width = Variables.StrokeBorder, color = Variables.BorderBrandDefault, shape = RoundedCornerShape(size = Variables.Radius200)))
+  .width(205.dp)
+  .height(40.dp)
+  .background(color = Variables.BackgroundBrandDefault, shape = RoundedCornerShape(size = Variables.Radius200))
+  .padding(start = Variables.Space300, top = Variables.Space300, end = Variables.Space300, bottom = Variables.Space300)
+
+object Variables {
+  val BackgroundBrandDefault: Color = Color(0xFF2C2C2C)
+  val Radius200: Dp = 8.dp
+  val BorderBrandDefault: Color = Color(0xFF2C2C2C)
+  val StrokeBorder: Dp = 1.dp
+  val Space300: Dp = 12.dp.dp
+  val Space200: Dp = 8.dp
+}
+
+Row(
+  horizontalArrangement = Arrangement.spacedBy(Variables.Space200, Alignment.CenterHorizontally),
+  verticalAlignment = Alignment.CenterVertically,
+) {
+  // Child views.
+}
