@@ -1,0 +1,103 @@
+#HOME
+Modifier
+  .width(393.dp)
+  .height(1049.dp)
+
+#TOP_GRADIENT
+Modifier
+  .width(393.dp)
+  .height(491.dp)
+UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 0)
+UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+
+#BOTTOM_GRADIENT
+Modifier
+  .width(393.dp)
+  .height(491.dp)
+
+UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 0)
+UIColor(red: 1, green: 0.92, blue: 0.18, alpha: 1)
+
+#WELCOME TEXT
+Modifier
+  .width(280.dp)
+  .height(81.dp)
+
+Text(
+  text = "Welcome",
+  style = TextStyle(
+    fontSize = 36.sp,
+    fontFamily = FontFamily(Font(R.font.poppins)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+  )
+)
+
+#LIST
+Modifier
+  .padding(0.dp)
+  .width(333.dp)
+  .height(201.dp)
+
+Modifier
+  .border(width = 1.dp, color = Color(0xFFD9D9D9), shape = RoundedCornerShape(size = 30.dp)))
+  .width(333.dp)
+  .height(201.dp)
+  .background(color = Color(0xFFFFFFFF), shape = RoundedCornerShape(size = 30.dp))
+
+Modifier
+  .width(155.dp)
+  .height(57.dp)
+
+Text(
+  text = "Amicus",
+  style = TextStyle(
+    fontSize = 40.sp,
+    lineHeight = 48.sp,
+    fontFamily = FontFamily(Font(R.font.inter)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Right,
+  )
+)
+
+Modifier
+  .width(143.dp)
+  .height(161.dp)
+
+Image(
+  painter = painterResource(id = R.drawable.image3),
+  contentDescription = "image description",
+  contentScale = ContentScale.FillBounds
+)
+
+Modifier
+  .width(155.dp)
+  .height(57.dp)
+
+Text(
+  text = "1",
+  style = TextStyle(
+    fontSize = 64.sp,
+    lineHeight = 76.8.sp,
+    fontFamily = FontFamily(Font(R.font.inter)),
+    fontWeight = FontWeight(600),
+    color = Color(0xFF000000),
+  )
+)
+
+Modifier
+  .width(211.dp)
+  .height(57.dp)
+
+Text(
+  text = "30,000 pts",
+  style = TextStyle(
+    fontSize = 24.sp,
+    lineHeight = 28.8.sp,
+    fontFamily = FontFamily(Font(R.font.inter)),
+    fontWeight = FontWeight(500),
+    color = Color(0xFF000000),
+    textAlign = TextAlign.Right,
+  )
+)
